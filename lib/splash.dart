@@ -133,6 +133,18 @@ class _BottomnavbarState extends State<Bottomnavbar> {
             inactiveColor: LightColor.darkgrey,
           ),
           BottomNavyBarItem(
+            icon: Icon(Icons.add_sharp),
+            title: Text("Add Post"),
+            activeColor: LightColor.primaryColor,
+            inactiveColor: LightColor.darkgrey,
+          ),
+          BottomNavyBarItem(
+            icon: Icon(Icons.add_business_rounded),
+            title: Text("Advertise"),
+            activeColor: LightColor.primaryColor,
+            inactiveColor: LightColor.darkgrey,
+          ),
+          BottomNavyBarItem(
             icon: Icon(Icons.account_circle),
             title: Text("My Account"),
             activeColor: LightColor.primaryColor,

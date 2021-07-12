@@ -1,3 +1,4 @@
+import 'package:Vintage_Shop/screens/home/home%20components/body.dart';
 import 'package:Vintage_Shop/screens/login/login.dart';
 import 'package:flutter/material.dart';
 
@@ -67,27 +68,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
       ),
-      body: Center(
-        child: SizedBox(
-          width: 400,
-          child: FlatButton(
-            onPressed: () => Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => LoginScreen())),
-            padding: EdgeInsets.only(right: 0.0),
-            child: Text("Login",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                )),
-          ),
-        ),
-      ),
+      body: Body(),
     );
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
   }
 }
